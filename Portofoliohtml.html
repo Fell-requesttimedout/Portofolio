@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Ario Felix</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #334155;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    /* Simple animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ario Felix Putra Santoso</h1>
+    <p>Student | IT Enthusiast | Cyber Security Learner</p>
+  </header>
+
+  <section class="about fade-in">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah mahasiswa yang tertarik pada bidang Cyber Security,
+      Networking, dan Web Development. Saya senang mengerjakan project
+      berbasis Linux Server, CTF Challenge, dan Machine Learning.
+    </p>
+  </section>
+
+  <section>
+    <h2>Project</h2>
+    <div class="projects fade-in">
+      <div class="card">
+        <h3>Setup Web Server Debian</h3>
+        <p>Konfigurasi Apache2, Bind9, dan WordPress di Debian Linux.</p>
+      </div>
+
+      <div class="card">
+        <h3>CTF Challenge</h3>
+        <p>Mengerjakan challenge cryptography dan web exploitation.</p>
+      </div>
+
+      <div class="card">
+        <h3>Clustering Machine Learning</h3>
+        <p>Submission akhir BMLP menggunakan metode clustering.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact fade-in">
+    <h2>Kontak</h2>
+    <p>Email: ariofelix@email.com</p>
+    <p>GitHub: github.com/username</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Ario Felix</p>
+  </footer>
+
+</body>
+</html>
